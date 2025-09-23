@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FILL THE FORM</title>
+</head>
+<body>
+    <div>
+        <style>
+             header {
+                background-color: orange;
+                color: black;
+                text-align: center;
+             }
+        </style>
+        <header>
+        <h1>FILL THE FORM</h1>
+        <form action="" novalidate>
+        </header>
+        <form >
+            <label for="name"> First Name:</label>
+         <input type="text" id="name" placeholder="Enter your first name">
+
+          <label for="name"> Middle Name:</label>
+         <input type ="text" id="name" placeholder="Enter your  middle name">
+         
+          <label for="name">Last Name:</label>
+         <input type="text" id="name" placeholder="Enter your last name">
+         <br><br>
+         <lable for="date">Birth date:</lable>
+         <input type="date" id="date">
+         <br>
+         <br>
+         <label for="PH-NO">Candidate No:<span style="color: red;">*</span></label>
+         <input type="number" id="PH-NO" placeholder="Enter phone number" required>
+         <label for="PH-NO">Parents no:</label>
+         <input type="number" id="PH-NO" placeholder="Enter phone number"required>
+         <br><br>
+         <lable for="EMAIL">Candidate Email:<span style="color: red;">*</span></lable>
+         <input type="email" id="email" placeholder="Enter email" required>
+         <br><br>
+         <lable for="AREA">Permanent Address:<span style="color: red;">*</span></lable>
+         <input type="text area" id="AREA" required>
+         <BR><BR>
+         <label>Gender:</label>
+         <input type="radio" id="Male" value="Male" name="Gender">
+         <label for="Male">Male</label>
+         <input type="radio" id="Female" value="Female" name="Gender">
+         <label for="Female">Female</label>
+         <input type="radio" id="Other" value="Other" name="Gender">
+         <label for="Other">Other</label>
+         <br><br>
+         <label for="file">UPLOAD DOCUMENT:</label>
+         <input type="file" id="file" multiple>
+         <br><br>
+         <label for="city">please select your city</label>
+         <select  id="city">
+            <option selected disabled>select city</option>
+            <option value="nashik">nashik</option>
+            <option value="mumbai">mumbai</option>
+            <option value="baramati">baramati</option>
+            <option value="morgaon">morgaon </option>
+         </select>
+         <br><br>
+         <input type="submit" value="submit button" >
+         <input type="reset" value="reset">
+         <br><br>
+    </div>
+</form>
+</body>
+</html>
