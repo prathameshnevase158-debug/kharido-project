@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kahrido Header</title>
+ <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+
+            /* fixed header */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        
+        .top-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .logo span {
+            color: blue;
+        }
+        .plus {
+            font-size: 12px;
+            color: orange;
+            margin-left: 5px;
+        }
+        .search-bar {
+            flex: 1;
+            margin: 0 20px;
+            text-align: center;
+        }
+        .search-bar input {
+            width: 60%;
+            padding: 8px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            outline: none;
+        }
+        .menu {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .menu a, .menu button {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 6px 12px;
+        }
+        .menu button {
+            background-color: #2874f0;
+            color: white;
+            border-radius: 4px;
+        }
+
+
+        nav {
+            margin-top: 8px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 30px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: blue;
+        }
+
+        .content {
+            margin-top: 130px; 
+            background-image: url(img.jpg) ;width: 100% ;height: 1000px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .inline-block{
+            display:inline-block;
+            height: 300px;
+            width: 280px;
+            margin: 10px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body style="height: 1000px;">
+  <header>
+    <div class="top-header">
+      <!-- Left side Logo -->
+      <div class="logo">
+        <span>Kharido</span><br>
+        <span class="plus">Explore Plus ✨</span>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="search-bar">
+        <input type="text" placeholder="Search for Products, Brands and More">
+      </div>
+
+      <!-- Right Side Menu -->
+      <div class="menu">
+        <button>👤 Login</button>
+        <a href="#">🛒 Cart</a>
+        <a href="#">⋮</a>
+      </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+<div class="background img">
+  
+</div>
+  <div class="content">
+    <div class="inline-block">
+      <h3 style="text-align: center; color: blue;" >Smart Devices</h3>
+      <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTFMvJSGf4y7cudC0CdgfPfCjBh8OkaoD1Xb7ATyQ4J1_u4p93hY16Ee1Aj8Tlu6VQKJHR73JI2mwPdXAOQJ7Kih6kADABQhZITLlYrI81PewgEUdEazUn2N8WOn2XcGdEqRD1VZLk&usqp=CAc" alt="img1" height="104px" width="130px">
+      <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTxLeFfkHa2izUuJCrGuZEXSgtXlCrwcya4m4XjFm9d4PogTGHXeDAJNxy114Oh3Q1AN8FkH6Vkr4YfeLe5sxYLmFkVG0mJMhpd-8r5hq82_BxHTDNtRtZF0y8FIu3pRhYkgA1lhes&usqp=CAc" alt="img2" height="104px" width="130px">
+      <br>
+      <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ8AwbYyJL5Z6a7synAkPrGKz6OwT1anbzDvhcNhSyi9BxvYZQTqMjWiz1iUwE6BZVsCL4qu8Yl5AJcJ4XtNAOFv-FjVA7MYcb91Z-HjnGD6Vu2vS09SwDSHRhCk8fTciHVl2XfBwc&usqp=CAc" alt="img3" height="104px" width="130px">
+      <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSFVVgE74L_2307fgEZdgTXUpKDD5xAMWL7dSAycAXFcXFMB5nUeGPTdeWp0lnB5pApceAGNIFgF4hnX9D2Q00e7fJA_1yoEX6lw4PCVGDnkfaEcY8I8ZySl1DteliJbwO6efWd4Q&usqp=CAc" alt="img4" height="104px" width="130px">
+      <div style="text-align: center;">
+        <a href="#">Click Here</a>
+      </div>
+    </div>
+
+      <!-- Block 2 -->
+    <div class="inline-block">
+      <h3 style="text-align: center; color: blue;">Fashion & Lifestyle</h3>
+      <img src="https://tse2.mm.bing.net/th/id/OIP.6CVSObRzXTbnOpATcMBvzgHaFj?pid=Api&P=0&h=180" alt="fashion1" height="104px" width="130px">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.jQM9ozSpFAPXqjuY4O-KCwHaEp?pid=Api&P=0&h=180" alt="fashion2" height="104px" width="130px">
+      <br>
+      <img src="https://tse3.mm.bing.net/th/id/OIP.M3BnPk0eQ4fPUJ98NDbQCwHaHa?pid=Api&P=0&h=180" alt="fashion3" width="130px" height="104px">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.stip__ROYpTPaQLJ31zQwAHaHa?pid=Api&P=0&h=180" alt="fashion4" width="130px" height="104px">
+      <div style="text-align: center;">
+        <a href="#">Click Here</a>
+      </div>
+    </div>
+
+    <!-- Block 3 -->
+      <div class="inline-block">
+      <h3 style="text-align: center; color: blue;">Home & Kitchen</h3>
+      <img src="https://sp.yimg.com/ib/th?id=OPAC.QqNhQ6zu9c9%2bHA474C474&o=5&pid=21.1&w=160&h=105" alt="fashion1" height="104px" width="120px">
+      <img src="https://sp.yimg.com/ib/th?id=OPAC.oFGvqVo%2fQrkdbQ474C474&o=5&pid=21.1&w=160&h=105" alt="fashion2" height="104px" width="120px">
+      <br>
+      <img src="https://tse1.mm.bing.net/th/id/OIP.F6Z86TQ2pbRrO-ZJN8YRXwHaEQ?pid=Api&P=0&h=180" alt="fashion3" width="130px" height="104px">
+      <img src="https://sp.yimg.com/ib/th?id=OPAC.lFUBHz434jvuuQ474C474&o=5&pid=21.1&w=160&h=105" alt="fashion4" width="110px" height="104px">
+      <div style="text-align: center;">
+        <a href="#">Click Here</a>
+      </div>
+    </div>
+
+    <!-- Block 4 -->
+    <div class="inline-block">
+      <h3 style="text-align: center; color: blue;">Beauty & Personal Care</h3>
+      <img src="https://sp.yimg.com/ib/th?id=OPAC.YURJ3Fd9%2fsN%2btg474C474&o=5&pid=21.1&w=160&h=105" alt="fashion1" height="104px" width="150px">
+      <img src="https://sp.yimg.com/ib/th?id=OPAC.MS3KN%2fIQSPOBEw474C474&o=5&pid=21.1&w=160&h=105" alt="fashion2" height="104px" width="100px">
+      <br>
+      <img src="https://sp.yimg.com/ib/th?id=OPAC.OB6huadfFzirCQ474C474&o=5&pid=21.1&w=160&h=105" alt="fashion3" width="130px" height="104px">
+      <img src="https://sp.yimg.com/ib/th?id=OPAC.Ulb9B0O9jmPt6A474C474&o=5&pid=21.1&w=160&h=105" alt="fashion4" width="130px" height="104px">
+      <div style="text-align: center;">
+        <a href="#">Click Here</a>
+      </div>
+    </div>
+    <!--block 5-->
+
+
+
+  </div>
+</body>
+</html>
