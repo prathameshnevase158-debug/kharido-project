@@ -59,7 +59,7 @@
         .menu {
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 5px;
         }
         .menu a, .menu button {
             text-decoration: none;
@@ -68,13 +68,86 @@
             border: none;
             background: none;
             cursor: pointer;
-            padding: 6px 12px;
+            padding: 4px 12px;
         }
         .menu button {
             background-color: #2874f0;
             color: white;
             border-radius: 4px;
         }
+
+         body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar a:hover {
+      background-color: #f1f3f6;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+   /* Login button */
+.dropbtn {
+  background-color: #fff; /* default button background */
+  color: #000; /* default text color */
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Hover effect on button */
+.dropbtn:hover {
+  background-color: #2874f0;
+  color: white;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative; /* dropdown content ko button ke relative position me lane ke liye */
+  display: inline-block;
+}
+
+/* Dropdown content (the list) */
+.dropdown-content {
+  display: none; /* by default hidden */
+  position: absolute; /* button ke niche absolute position */
+  top: 100%; /* button ke exact niche */
+  right: 0; /* right aligned */
+  background-color: #fff;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  z-index: 1;
+}
+
+/* Dropdown links inside list */
+.dropdown-content a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+/* Hover effect on dropdown items */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show dropdown on hover over parent */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #0a5adb;
+  color: white;
+}
 
 
         nav {
@@ -113,7 +186,7 @@
     </style>
 </head>
 <body style="height: 1000px;">
-  <header>
+  <header style="background-color: yellow;">
     <div class="top-header">
       <!-- Left side Logo -->
       <div class="logo">
@@ -128,8 +201,21 @@
 
       <!-- Right Side Menu -->
       <div class="menu">
-        <button>👤 Login</button>
+        <div class="navbar">
+    <div class="dropdown">
+    <a href="page1.html" class="dropbtn">Login ▼</a>
+      <div class="dropdown-content">
+        <a href="#">My Profile</a>
+        <a href="#">Kharido Plus Zone</a>
+        <a href="#">Orders</a>
+        <a href="#">Wishlist</a>
+        <a href="#">Rewards</a>
+        <a href="#">Gift Cards</a>
+      </div>
+    </div>
+  </div>
         <a href="#">🛒 Cart</a>
+        <a href="#">❤️ Wishlist</a>
         <a href="#">⋮</a>
       </div>
     </div>
@@ -143,6 +229,7 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
+
   </header>
 
 </div>
