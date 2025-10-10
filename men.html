@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Men Fashion - Kharido</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f3f6;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .products {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background: #fff;
+      width: 220px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card h4 {
+      margin: 10px 0 5px;
+      font-size: 16px;
+    }
+
+    .card p {
+      color: green;
+      font-weight: bold;
+      margin: 5px 0 10px;
+    }
+
+    .buy-btn {
+      background: #2874f0;
+      color: white;
+      padding: 8px 15px;
+      border: none;
+      margin-bottom: 15px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .buy-btn:hover {
+      background: #0d47a1;
+    }
+
+    .back {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Men Fashion - Kharido</h2>
+
+  <div class="products">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246" alt="Shirt">
+      <h4>Formal Shirt</h4>
+      <p>₹899</p>
+      <button class="buy-btn">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb" alt="T-Shirt">
+      <h4>Casual T-Shirt</h4>
+      <p>₹499</p>
+      <button class="buy-btn">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1602810318383-e7f6a2f0a3d4" alt="Blazer">
+      <h4>Stylish Blazer</h4>
+      <p>₹2499</p>
+      <button class="buy-btn">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1593032465171-b3fb0b92c61c" alt="Jeans">
+      <h4>Blue Jeans</h4>
+      <p>₹1299</p>
+      <button class="buy-btn">Add to Cart</button>
+    </div>
+  </div>
+
+  <a href="index.html" class="back">Back to Home</a>
+
+</body>
+</html>
